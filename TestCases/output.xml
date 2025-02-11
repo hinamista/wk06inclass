@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.4 on win32)" generated="2025-02-11T21:54:07.604240" rpa="false" schemaversion="5">
+<suite id="s1" name="myTest" source="C:\Users\https\Documents\DevOps\wk06inclass\TestCases\myTest.robot">
+<test id="s1-t1" name="URL Test" line="31">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:08.329964" level="INFO">Opening browser 'edge' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T21:54:08.328963" elapsed="3.842833"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:12.179072" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-02-11T21:54:12.172296" elapsed="0.006776"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:12.185238" level="INFO">Current location is 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-02-11T21:54:12.179072" elapsed="0.006166"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:12.186293" elapsed="2.204325"/>
+</kw>
+<doc>This is a test case documentation.</doc>
+<status status="PASS" start="2025-02-11T21:54:08.327963" elapsed="6.063204"/>
+</test>
+<test id="s1-t2" name="Search Test" line="38">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:14.392913" level="INFO">Opening browser 'edge' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T21:54:14.392913" elapsed="3.436629"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:17.829692" level="INFO">Typing text 'Python' into text field 'q'.</msg>
+<arg>locator=q</arg>
+<arg>text=Python</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:17.829692" elapsed="0.115024"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:17.944716" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2025-02-11T21:54:17.945717" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2025-02-11T21:54:17.945717" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:17.944716" elapsed="1.057138"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:19.002880" elapsed="2.176150"/>
+</kw>
+<doc>This is a test case documentation.</doc>
+<tag>Regression</tag>
+<status status="PASS" start="2025-02-11T21:54:14.392169" elapsed="6.786861"/>
+</test>
+<test id="s1-t3" name="Variables Test" line="46">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:21.181565" level="INFO">Opening browser 'edge' to base url 'https://www.google.com'.</msg>
+<arg>${my_URL}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T21:54:21.181565" elapsed="2.692326"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:23.874899" level="INFO">Typing text 'Python' into text field 'q'.</msg>
+<arg>locator=q</arg>
+<arg>text=${my_Query}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:23.873891" elapsed="0.121548"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:23.997460" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2025-02-11T21:54:23.997460" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2025-02-11T21:54:23.997460" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:23.996460" elapsed="1.232068"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:25.229889" elapsed="2.173780"/>
+</kw>
+<doc>Launch Google and search for Python</doc>
+<tag>Regression</tag>
+<status status="PASS" start="2025-02-11T21:54:21.181023" elapsed="6.223699"/>
+</test>
+<test id="s1-t4" name="Read from csv" line="54">
+<kw name="Run" owner="OperatingSystem">
+<msg time="2025-02-11T21:54:27.413665" level="INFO">Running command 'type myData.csv 2&gt;&amp;1'.</msg>
+<msg time="2025-02-11T21:54:27.421681" level="INFO">${csv_data} = This is the first line of data
+This is the second line of data
+This is the third line of data</msg>
+<var>${csv_data}</var>
+<arg>type ${csv_file_path}</arg>
+<doc>Runs the given command in the system and returns the output.</doc>
+<status status="PASS" start="2025-02-11T21:54:27.405665" elapsed="0.016016"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-11T21:54:27.422681" level="INFO">CSV Data : This is the first line of data
+This is the second line of data
+This is the third line of data</msg>
+<arg>CSV Data : ${csv_data}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-11T21:54:27.422681" elapsed="0.000000"/>
+</kw>
+<kw name="Split To Lines" owner="String">
+<msg time="2025-02-11T21:54:27.423127" level="INFO">3 lines returned</msg>
+<msg time="2025-02-11T21:54:27.423127" level="INFO">${csv_rows} = ['This is the first line of data', 'This is the second line of data', 'This is the third line of data']</msg>
+<var>${csv_rows}</var>
+<arg>${csv_data}</arg>
+<doc>Splits the given string to lines.</doc>
+<status status="PASS" start="2025-02-11T21:54:27.423127" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-11T21:54:27.423127" level="INFO">This is the first line of data</msg>
+<arg>${element}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-11T21:54:27.423127" elapsed="0.000000"/>
+</kw>
+<var name="${element}">This is the first line of data</var>
+<status status="PASS" start="2025-02-11T21:54:27.423127" elapsed="0.001003"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-11T21:54:27.424130" level="INFO">This is the second line of data</msg>
+<arg>${element}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-11T21:54:27.424130" elapsed="0.000000"/>
+</kw>
+<var name="${element}">This is the second line of data</var>
+<status status="PASS" start="2025-02-11T21:54:27.424130" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-11T21:54:27.424130" level="INFO">This is the third line of data</msg>
+<arg>${element}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-11T21:54:27.424130" elapsed="0.000000"/>
+</kw>
+<var name="${element}">This is the third line of data</var>
+<status status="PASS" start="2025-02-11T21:54:27.424130" elapsed="0.000000"/>
+</iter>
+<var>${element}</var>
+<value>@{csv_rows}</value>
+<status status="PASS" start="2025-02-11T21:54:27.423127" elapsed="0.001003"/>
+</for>
+<status status="PASS" start="2025-02-11T21:54:27.405665" elapsed="0.018465"/>
+</test>
+<test id="s1-t5" name="Customised Keywords" line="63">
+<kw name="Do The Usual">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:27.427238" level="INFO">Opening browser 'edge' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T21:54:27.427238" elapsed="2.790982"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:30.219221" level="INFO">Typing text 'Python' into text field 'q'.</msg>
+<arg>locator=q</arg>
+<arg>text=Python</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:30.218721" elapsed="0.120873"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:30.340658" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2025-02-11T21:54:30.340658" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2025-02-11T21:54:30.340658" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:30.339594" elapsed="1.191067"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:31.531494" elapsed="2.185676"/>
+</kw>
+<status status="PASS" start="2025-02-11T21:54:27.427238" elapsed="6.289932"/>
+</kw>
+<status status="PASS" start="2025-02-11T21:54:27.425130" elapsed="6.292994"/>
+</test>
+<test id="s1-t6" name="Built-In Keywords with Pauses" line="66">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:33.720119" level="INFO">Opening browser 'edge' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T21:54:33.720119" elapsed="3.283463"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:37.004584" level="INFO">Typing text 'Python' into text field 'q'.</msg>
+<arg>locator=q</arg>
+<arg>text=Python</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:37.003582" elapsed="0.123488"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:37.460431" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-11T21:54:37.128570" elapsed="0.332361"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2025-02-11T21:54:37.460931" elapsed="1.391705"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:38.853769" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2025-02-11T21:54:38.853769" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2025-02-11T21:54:38.853769" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:38.853033" elapsed="1.178976"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2025-02-11T21:54:40.032497" elapsed="1.241894"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:41.274892" elapsed="2.155159"/>
+</kw>
+<status status="PASS" start="2025-02-11T21:54:33.720119" elapsed="9.710909"/>
+</test>
+<test id="s1-t7" name="Get response from website" line="75">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-02-11T21:54:43.434042" level="INFO">Creating Session using : alias=MySession, url=https://www.google.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>${session_name}</arg>
+<arg>${URL_request_base}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-02-11T21:54:43.434042" elapsed="0.000000"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-02-11T21:54:43.901293" level="INFO">GET Request : url=https://www.google.com/ 
+ path_url=/ 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-02-11T21:54:43.901293" level="INFO">GET Response : url=https://www.google.com/ 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 11 Feb 2025 13:54:42 GMT', 'Expires': '-1', 'Cache-Control': 'private, max-age=0', 'Content-Type': 'text/html; charset=ISO-8859-1', 'Content-Security-Policy-Report-Only': "object-src 'none';base-uri 'self';script-src 'nonce-BcVlbiGIQKmwQc-XrNbcqg' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp", 'Accept-CH': 'Sec-CH-Prefers-Color-Scheme', 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Content-Encoding': 'gzip', 'Server': 'gws', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'AEC=AVcja2fcgQN5SwxML8dwasayC3VSbq-m-0e5wp2lFd1lP8avqya8Gs5kJA; expires=Sun, 10-Aug-2025 13:54:42 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=521=TgX2MuUzXEtkZN2Tkpptii_eP3MKO54CuGT9DEVSp_w1eykOcBYpxh_YsasvRqRT_oz_LbmWQiVcCe4Z4C-Lgm2K_o168op0lXBQqwSoPdyGPdjl43m2Ih8_px_xzHOo4lT2s6wOmh2g1cXTywiW-FZIyYYKexf4YPVdrJbsbMlwGZOnx41q-cfNBUCBokRj6eyd62cUPRCDsw; expires=Wed, 13-Aug-2025 13:54:42 GMT; path=/; domain=.google.com; HttpOnly', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} 
+ body=&lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="en-SG"&gt;&lt;head&gt;&lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"&gt;&lt;meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce="BcVlbiGIQKmwQc-XrNbcqg"&gt;(function(){var _g={kEI:'olarZ-7IDb_l2roPxdGVsAU',kEXPI:'0,202747,3497544,1093,538661,2872,2891,8349,34679,30022,217969,142932,212051,35269,11813,30911,5230281,11,10463,766,125,8834975,2,30,3,8,23933950,4043710,25228681,112218,10886,15164,4786,2,3394,49429,21672,6752,23878,7042,2097,3078,1522,328,6225,2949,25041,6320,16265,3615,9975,1341,5407,8300,15632,21305,33,9041,695,149,11661,2,5160,10667,24330,1500,3854,41,6133,7506,1,4922,617,1202,4106,7736,967,3430,8976,3993,951,2149,1539,3075,5774,4310,2371,1265,738,3744,634,3589,6453,1856,1004,1627,20,820,925,3,2,1920,1886,1712,9256,2109,3,1149,38,2,419,1938,591,15,1536,115,465,1326,714,1401,388,1087,167,56,524,499,1,537,2,292,218,1,704,3610,75,3208,206,363,1060,1191,116,1226,1751,142,843,1890,569,228,1529,639,354,1030,14,139,3,2800,4,5,415,1364,8,826,6,1359,194,901,1008,341,16,25,334,734,304,3,2,1,2,2,2,3,1442,231,167,3,132,431,313,291,310,19,39,158,821,182,711,6,4,2010,1009,1052,575,313,443,342,96,2,2,373,125,591,985,296,197,357,38,834,22,1,4,398,438,98,344,310,145,618,119,293,207,50,151,16,196,496,10,7,58,594,11,293,9,1,3,1592,369,72,633,86,66,165,79,141,311,56,25,168,43,62,576,652,252,216,126,620,329,1265,21359028,18,2013,40,2487,8,3873,12,959,5358,8017795',kBL:'4iXA',kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn='webhp';google.kHL='en-SG';})();(function(){
+var g=this||self;function k(){return window.google&amp;&amp;window.google.kOPI||null};var l,m=[];function n(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||l}function p(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("leid")));)a=a.parentNode;return b}function q(a){/^http:/i.test(a)&amp;&amp;window.location.protocol==="https:"&amp;&amp;(google.ml&amp;&amp;google.ml(Error("a"),!1,{src:a,glmm:1}),a="");return a}
+function r(a,b,d,c,h){var e="";b.search("&amp;ei=")===-1&amp;&amp;(e="&amp;ei="+n(c),b.search("&amp;lei=")===-1&amp;&amp;(c=p(c))&amp;&amp;(e+="&amp;lei="+c));var f=b.search("&amp;cshid=")===-1&amp;&amp;a!=="slh";c="&amp;zx="+Date.now().toString();g._cshid&amp;&amp;f&amp;&amp;(c+="&amp;cshid="+g._cshid);(d=d())&amp;&amp;(c+="&amp;opi="+d);return"/"+(h||"gen_204")+"?atyp=i&amp;ct="+String(a)+"&amp;cad="+(b+e+c)};l=google.kEI;google.getEI=n;google.getLEI=p;google.ml=function(){return null};google.log=function(a,b,d,c,h,e){e=e===void 0?k:e;d||(d=r(a,b,e,c,h));if(d=q(d)){a=new Image;var f=m.length;m[f]=a;a.onerror=a.onload=a.onabort=function(){delete m[f]};a.src=d}};google.logUrl=function(a,b){b=b===void 0?k:b;return r("",a,b)};}).call(this);(function(){google.y={};google.sy=[];var d;(d=google).x||(d.x=function(a,b){if(a)var c=a.id;else{do c=Math.random();while(google.y[c])}google.y[c]=[a,b];return!1});var e;(e=google).sx||(e.sx=function(a){google.sy.push(a)});google.lm=[];var f;(f=google).plm||(f.plm=function(a){google.lm.push.apply(google.lm,a)});google.lq=[];var g;(g=google).load||(g.load=function(a,b,c){google.lq.push([[a],b,c])});var h;(h=google).loadAll||(h.loadAll=function(a,b){google.lq.push([a,b])});google.bx=!1;var k;(k=google).lx||(k.lx=function(){});var l=[],m;(m=google).fce||(m.fce=function(a,b,c,n){l.push([a,b,c,n])});google.qce=l;}).call(this);google.f={};(function(){
+document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a=c==="1"||c==="q"&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if(a.tagName==="A"){a=a.getAttribute("data-nohref")==="1";break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;style&gt;#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+&lt;/style&gt;&lt;style&gt;body,td,a,p,.h{font-family:sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1967d2}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px sans-serif}.gsfs{font:17px sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#000}a{color:#681da8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1967d2}a:visited{color:#681da8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#f8f9fa;border:solid 1px;border-color:#dadce0 #70757a #70757a #dadce0;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;color:#000;border:none;cursor:pointer;height:30px;margin:0;outline:0;font:15px sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}&lt;/style&gt;&lt;script nonce="BcVlbiGIQKmwQc-XrNbcqg"&gt;(function(){window.google.erd={jsr:1,bv:2166,de:true,dpf:'Vs2oBG7pXcQWS5O_-PD222bZIDFz4cREzXNIBa6dMf8'};
+var g=this||self;var k,l=(k=g.mei)!=null?k:1,m,p=(m=g.diel)!=null?m:0,q,r=(q=g.sdo)!=null?q:!0,t=0,u,w=google.erd,x=w.jsr;google.ml=function(a,b,d,n,e){e=e===void 0?2:e;b&amp;&amp;(u=a&amp;&amp;a.message);d===void 0&amp;&amp;(d={});d.cad="ple_"+google.ple+".aple_"+google.aple;if(google.dl)return google.dl(a,e,d,!0),null;b=d;if(x&lt;0){window.console&amp;&amp;console.error(a,b);if(x===-2)throw a;b=!1}else b=!a||!a.message||a.message==="Error loading script"||t&gt;=l&amp;&amp;!n?!1:!0;if(!b)return null;t++;d=d||{};b=encodeURIComponent;var c="/gen_204?atyp=i&amp;ei="+b(google.kEI);google.kEXPI&amp;&amp;(c+="&amp;jexpid="+b(google.kEXPI));c+="&amp;srcpg="+b(google.sn)+"&amp;jsr="+b(w.jsr)+
+"&amp;bver="+b(w.bv);w.dpf&amp;&amp;(c+="&amp;dpf="+b(w.dpf));var f=a.lineNumber;f!==void 0&amp;&amp;(c+="&amp;line="+f);var h=a.fileName;h&amp;&amp;(h.indexOf("-extension:/")&gt;0&amp;&amp;(e=3),c+="&amp;script="+b(h),f&amp;&amp;h===window.location.href&amp;&amp;(f=document.documentElement.outerHTML.split("\n")[f],c+="&amp;cad="+b(f?f.substring(0,300):"No script found.")));google.ple&amp;&amp;google.ple===1&amp;&amp;(e=2);c+="&amp;jsel="+e;for(var v in d)c+="&amp;",c+=b(v),c+="=",c+=b(d[v]);c=c+"&amp;emsg="+b(a.name+": "+a.message);c=c+"&amp;jsst="+b(a.stack||"N/A");c.length&gt;=12288&amp;&amp;(c=c.substr(0,12288));a=c;n||google.log(0,"",a);return a};window.onerror=function(a,b,d,n,e){u!==a&amp;&amp;(a=e instanceof Error?e:Error(a),d===void 0||"lineNumber"in a||(a.lineNumber=d),b===void 0||"fileName"in a||(a.fileName=b),google.ml(a,!1,void 0,!1,a.name==="SyntaxError"||a.message.substring(0,11)==="SyntaxError"||a.message.indexOf("Script error")!==-1?3:p));u=null;r&amp;&amp;t&gt;=l&amp;&amp;(window.onerror=null)};})();&lt;/script&gt;&lt;/head&gt;&lt;body bgcolor="#fff"&gt;&lt;script nonce="BcVlbiGIQKmwQc-XrNbcqg"&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function(){window.n &amp;&amp; window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&amp;&amp;document.f.q.focus();document.gbqf&amp;&amp;document.gbqf.q.focus();}
+}
+})();&lt;/script&gt;&lt;div id="mngb"&gt;&lt;div id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Search&lt;/b&gt; &lt;a class=gb1 href="https://www.google.com/imghp?hl=en&amp;tab=wi"&gt;Images&lt;/a&gt; &lt;a class=gb1 href="https://maps.google.com.sg/maps?hl=en&amp;tab=wl"&gt;Maps&lt;/a&gt; &lt;a class=gb1 href="https://play.google.com/?hl=en&amp;tab=w8"&gt;Play&lt;/a&gt; &lt;a class=gb1 href="https://www.youtube.com/?tab=w1"&gt;YouTube&lt;/a&gt; &lt;a class=gb1 href="https://news.google.com/?tab=wn"&gt;News&lt;/a&gt; &lt;a class=gb1 href="https://mail.google.com/mail/?tab=wm"&gt;Gmail&lt;/a&gt; &lt;a class=gb1 href="https://drive.google.com/?tab=wo"&gt;Drive&lt;/a&gt; &lt;a class=gb1 style="text-decoration:none" href="https://www.google.com.sg/intl/en/about/products?tab=wh"&gt;&lt;u&gt;More&lt;/u&gt; &amp;raquo;&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100%&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;/span&gt;&lt;a href="http://www.google.com.sg/history/optout?hl=en" class=gb4&gt;Web History&lt;/a&gt; | &lt;a  href="/preferences?hl=en" class=gb4&gt;Settings&lt;/a&gt; | &lt;a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAAQ" class=gb4&gt;Sign in&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style=left:0&gt;&lt;/div&gt;&lt;div class=gbh style=right:0&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;br clear="all" id="lgpd"&gt;&lt;div id="XjhHGf"&gt;&lt;img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png" style="padding:28px 0 14px" width="272" id="hplogo"&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;form action="/search" name="f"&gt;&lt;table cellpadding="0" cellspacing="0"&gt;&lt;tr valign="top"&gt;&lt;td width="25%"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="center" nowrap=""&gt;&lt;input name="ie" value="ISO-8859-1" type="hidden"&gt;&lt;input value="en-SG" name="hl" type="hidden"&gt;&lt;input name="source" type="hidden" value="hp"&gt;&lt;input name="biw" type="hidden"&gt;&lt;input name="bih" type="hidden"&gt;&lt;div class="ds" style="height:32px;margin:4px 0"&gt;&lt;input class="lst" style="margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#000" autocomplete="off" value="" title="Google Search" maxlength="2048" name="q" size="57"&gt;&lt;/div&gt;&lt;br style="line-height:0"&gt;&lt;span class="ds"&gt;&lt;span class="lsbb"&gt;&lt;input class="lsb" value="Google Search" name="btnG" type="submit"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="ds"&gt;&lt;span class="lsbb"&gt;&lt;input class="lsb" id="tsuid_olarZ-7IDb_l2roPxdGVsAU_1" value="I'm Feeling Lucky" name="btnI" type="submit"&gt;&lt;script nonce="BcVlbiGIQKmwQc-XrNbcqg"&gt;(function(){var id='tsuid_olarZ-7IDb_l2roPxdGVsAU_1';document.getElementById(id).onclick = function(){if (this.form.q.value){this.checked = 1;if (this.form.iflsig)this.form.iflsig.disabled = false;}
+el... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2025-02-11T21:54:43.902289" level="INFO">C:\Users\https\Documents\DevOps\wk06inclass\venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.google.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-02-11T21:54:43.903220" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${session_name}</arg>
+<arg>\</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-02-11T21:54:43.435042" elapsed="0.468178"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2025-02-11T21:54:43.908436" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-02-11T21:54:43.906429" elapsed="0.002007"/>
+</kw>
+<status status="PASS" start="2025-02-11T21:54:43.433037" elapsed="0.475399"/>
+</test>
+<test id="s1-t8" name="Submit Form" line="80">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:43.912436" level="INFO">Opening browser 'edge' to base url 'https://formy-project.herokuapp.com/form'.</msg>
+<arg>${form_url}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T21:54:43.911401" elapsed="4.344614"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.257022" level="INFO">Typing text 'John' into text field 'id:first-name'.</msg>
+<arg>id:first-name</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.256015" elapsed="0.124614"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.381699" level="INFO">Typing text 'Doe' into text field 'id:last-name'.</msg>
+<arg>id:last-name</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.381699" elapsed="0.069718"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.452422" level="INFO">Typing text 'QA Engineer' into text field 'id:job-title'.</msg>
+<arg>id:job-title</arg>
+<arg>QA Engineer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.451984" elapsed="0.080587"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.533576" level="INFO">Clicking element 'id:radio-button-2'.</msg>
+<arg>id:radio-button-2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.533576" elapsed="0.094237"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.628083" level="INFO">Clicking element 'css:input[type='checkbox']'.</msg>
+<arg>${checkbox_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.628083" elapsed="0.078611"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.708244" level="INFO">Selecting options from selection list 'id:select-menu' by value 2.</msg>
+<arg>id:select-menu</arg>
+<arg>${years_exp}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.707225" elapsed="0.080738"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.787963" level="INFO">Typing text '19-11-2024' into text field 'id:datepicker'.</msg>
+<arg>id:datepicker</arg>
+<arg>${date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.787963" elapsed="0.115261"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:48.904224" level="INFO">Clicking element 'css:a.btn.btn-lg.btn-primary'.</msg>
+<arg>css:a.btn.btn-lg.btn-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.904224" elapsed="0.069420"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-11T21:54:49.091583" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-11T21:54:48.974651" elapsed="0.116932"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-11T21:54:54.093452" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-11T21:54:49.091583" elapsed="5.001869"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T21:54:54.094429" elapsed="2.213338"/>
+</kw>
+<status status="PASS" start="2025-02-11T21:54:43.910367" elapsed="12.397400"/>
+</test>
+<doc>This is the documentation of the test case suites.</doc>
+<status status="PASS" start="2025-02-11T21:54:07.605591" elapsed="48.703473"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Regression</stat>
+</tag>
+<suite>
+<stat name="myTest" id="s1" pass="8" fail="0" skip="0">myTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
